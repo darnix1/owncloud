@@ -12,8 +12,8 @@ services:
       - db
       - redis
     environment:
-      - OWNCLOUD_DOMAIN=tudominio.com  # IP:8080 # Nombre dominio válido    
-      - OWNCLOUD_TRUSTED_DOMAINS=tudominio.com  # IP # Nombre dominio válido 
+      - OWNCLOUD_DOMAIN=xdarix.duckdns.org:8080  # IP:8080 # Nombre dominio válido    
+      - OWNCLOUD_TRUSTED_DOMAINS=xdarix.duckdns.org  # IP # Nombre dominio válido 
       - OWNCLOUD_DB_TYPE=mysql
       - OWNCLOUD_DB_NAME=owncloud
       - OWNCLOUD_DB_USERNAME=owncloud
