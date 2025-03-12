@@ -1,0 +1,21 @@
+{
+      "id": 34,
+      "type": 1,
+      "title": "File browser",
+      "description": "Un administrador de archivos web",
+      "note": "Credenciales predeterminadas: admin/admin",
+      "categories": ["filesystem", "storage"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/filebrowser.png",
+      "image": "filebrowser/filebrowser:latest",
+      "ports": ["80/tcp"],
+      "volumes": [
+        {
+          "container": "/data"
+        },
+        {
+          "container": "/srv"
+        }
+      ],
+      "command": "--port 80 --database /data/database.db --root /srv"
+    },
